@@ -16,7 +16,8 @@ module ALUController (
       (ALUOp == 2'b10) && (Funct3 == 3'b101) && (Funct7 == 7'b0100000) ||   // SRA
       ((ALUOp == 2'b10) && (Funct3 == 3'b010) && (Funct7 == 7'b0000000)); //SLT 
 
-  assign Operation[1] = ((ALUOp == 2'b10) && (Funct3 == 3'b111) && (Funct7 == 7'b0000000)) ||  //AND
+  assign Operation[1] = ((ALUOp == 2'b00) || //LW/SW 
+      (ALUOp == 2'b10) && (Funct3 == 3'b111) && (Funct7 == 7'b0000000)) ||  //AND
       ((ALUOp == 2'b10) && (Funct3 == 3'b110) && (Funct7 == 7'b0000000)) || // OR
       ((ALUOp == 2'b10) && (Funct3 == 3'b101) && (Funct7 == 7'b0000000)) || // SRL
       (ALUOp == 2'b10) && (Funct3 == 3'b101) && (Funct7 == 7'b0100000);  // SRA
