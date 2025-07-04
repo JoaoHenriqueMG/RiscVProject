@@ -28,13 +28,13 @@ module alu#(
             4'b0101:        // SLL
                     ALUResult = SrcA << SrcB;
             4'b0110:        // SRL
-                    ALUResult = Srca >> SrcB;
+                    ALUResult = SrcA >> SrcB;
             4'b0111:        // SRA
                     ALUResult = SrcA >>> SrcB;
             4'b1000:        // Equal
                     ALUResult = (SrcA == SrcB) ? 1 : 0;
             4'b1001:        // SLT
-                    ALUResult = (SraC < SrcB) ? 1 : 0;
+                    ALUResult = (SrcA < SrcB) ? 1 : 0;
             default:
                     ALUResult = 0;
             endcase
