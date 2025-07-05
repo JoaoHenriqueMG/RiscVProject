@@ -1,0 +1,576 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/verif
+vadder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1751677515
+!i10b 1
+!s100 J@Bf42a<9Q9R;nJSZl2>B2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1LEfW8jBl1bMf6]?Q8[We2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1750877216
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/adder.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/adder.sv
+!i122 0
+Z6 L0 3 11
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1751677515.000000
+!s107 C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/tb_top.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/RISC_V.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Datapath.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/instructionmemory.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/datamemory.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/mux4.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/mux2.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/imm_Gen.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/HazardDetection.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ForwardingUnit.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/flopr.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Controller.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/BranchUnit.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ALUController.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/alu.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/RegFile.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/RegPack.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Memoria32Data.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Memoria32.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ramOnChipData.v|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ramOnChip32.v|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/adder.sv|
+Z9 !s90 -reportprogress|300|-f|compile_verilog|
+!i113 1
+Z10 tCvgOpt 0
+valu
+R1
+R2
+!i10b 1
+!s100 =F1Vf<26ePTPdkHB94?XY0
+R3
+I<NZSLdX_@<0J6:Nb5djTQ0
+R4
+S1
+R0
+w1751675673
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/alu.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/alu.sv
+!i122 0
+L0 3 40
+R7
+r1
+!s85 0
+31
+R8
+Z11 !s107 C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/tb_top.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/RISC_V.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Datapath.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/instructionmemory.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/datamemory.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/mux4.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/mux2.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/imm_Gen.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/HazardDetection.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ForwardingUnit.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/flopr.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Controller.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/BranchUnit.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ALUController.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/alu.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/RegFile.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/RegPack.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Memoria32Data.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Memoria32.sv|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ramOnChipData.v|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ramOnChip32.v|C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/adder.sv|
+R9
+!i113 1
+R10
+vALUController
+R1
+R2
+!i10b 1
+!s100 TSYI^P:AL5mb7FQE;TaO93
+R3
+ImTU4N6U6?k^Md8A9D65PY1
+R4
+S1
+R0
+w1751677034
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ALUController.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ALUController.sv
+!i122 0
+L0 3 32
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@a@l@u@controller
+vBranchUnit
+R1
+R2
+!i10b 1
+!s100 6mfj04GQ4<NdfP3N3I?:l2
+R3
+IQmcZDcj04D65WL5JOkndz3
+R4
+S1
+R0
+Z12 w1750877215
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/BranchUnit.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/BranchUnit.sv
+!i122 0
+L0 3 26
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@branch@unit
+vController
+R1
+R2
+!i10b 1
+!s100 KE>:k3m2=bkjb8X=omCz`1
+R3
+Iji=4PDdJI]JmWe>ma5?Bb3
+R4
+S1
+R0
+w1751674602
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Controller.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Controller.sv
+!i122 0
+L0 3 36
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@controller
+vdatamemory
+R1
+R2
+!i10b 1
+!s100 :U7:`NI4[Mdm`JaQ@69]m0
+R3
+IhT2bNKV_mIJJSkj7?T?BH3
+R4
+S1
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/datamemory.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/datamemory.sv
+!i122 0
+L0 3 55
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vDatapath
+R1
+Z13 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 jmBJA`I=jnY]6?^J7G@L>0
+DXx4 work 16 Datapath_sv_unit 0 22 W=L?T_2];lcaF4:8I^fd60
+R2
+R4
+r1
+!s85 0
+!i10b 1
+!s100 cWkHWmncDlQL`5?j6eNGC1
+ILSjR7cAoRH37O<:aO]>Va1
+!s105 Datapath_sv_unit
+S1
+R0
+R12
+Z14 8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Datapath.sv
+Z15 FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Datapath.sv
+!i122 0
+L0 5 312
+R7
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@datapath
+XDatapath_sv_unit
+R1
+R13
+R2
+VW=L?T_2];lcaF4:8I^fd60
+r1
+!s85 0
+!i10b 1
+!s100 K:EP;anA:W4111N=WXz4a0
+IW=L?T_2];lcaF4:8I^fd60
+!i103 1
+S1
+R0
+R12
+R14
+R15
+!i122 0
+L0 3 0
+R7
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@datapath_sv_unit
+vflopr
+R1
+R2
+!i10b 1
+!s100 ElcDNl85mGL9dF?Xd3Za63
+R3
+IHaXeo?9_`Gcla>U5]m6XE3
+R4
+S1
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/flopr.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/flopr.sv
+!i122 0
+L0 3 16
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vForwardingUnit
+R1
+R2
+!i10b 1
+!s100 CEcEo:_iR9UO6Xd4H`cAC3
+R3
+ImVh2b?ldGYBWz>0Qo]g=o2
+R4
+S1
+R0
+R12
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ForwardingUnit.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ForwardingUnit.sv
+!i122 0
+L0 3 18
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@forwarding@unit
+vHazardDetection
+R1
+R2
+!i10b 1
+!s100 =:@:A`@P^b2GYnY^68bZa2
+R3
+I1Pg:52Xo<E4`R@:9c@[FF2
+R4
+S1
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/HazardDetection.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/HazardDetection.sv
+!i122 0
+R6
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@hazard@detection
+vimm_Gen
+R1
+R2
+!i10b 1
+!s100 FMASVR8gfVEc9QmQgj5>63
+R3
+I9[mf6PgcUDAaz9:2^A:;d2
+R4
+S1
+R0
+w1751676408
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/imm_Gen.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/imm_Gen.sv
+!i122 0
+L0 3 29
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nimm_@gen
+vinstructionmemory
+R1
+R2
+!i10b 1
+!s100 6>jnlWCg62QiF^iRiX?C81
+R3
+Im8>SZ`TE_7ZK1C>bYbRWT1
+R4
+S1
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/instructionmemory.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/instructionmemory.sv
+!i122 0
+L0 4 23
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vMemoria32
+R1
+R2
+!i10b 1
+!s100 oLjQ]Qb`C9VE3a1DaRF6=0
+R3
+I;;HoZXR5]Xm`lRQG[^ERL2
+R4
+S1
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Memoria32.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Memoria32.sv
+!i122 0
+Z16 L0 26 94
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@memoria32
+vMemoria32Data
+R1
+R2
+!i10b 1
+!s100 ]NU@J;o]<e]AW?:CD;Fg21
+R3
+IY?OPEkEdXlzAWn9dHd9923
+R4
+S1
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Memoria32Data.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/Memoria32Data.sv
+!i122 0
+R16
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@memoria32@data
+vmux2
+R1
+R2
+!i10b 1
+!s100 9Hgm:_HaC7CH^93]dTO>S3
+R3
+In_?lYS_RnXhVYz_ggV1b81
+R4
+S1
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/mux2.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/mux2.sv
+!i122 0
+L0 3 12
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vmux4
+R1
+R2
+!i10b 1
+!s100 PkRNb1:FWO8e2Pa@XbPjl1
+R3
+IA]PWQB5[`KB<lgOJGQ?HY0
+R4
+S1
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/mux4.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/mux4.sv
+!i122 0
+L0 3 14
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+XPipe_Buf_Reg_PKG
+R1
+R2
+!i10b 1
+!s100 k?>B3>50o;E82z7G4HUZg2
+R3
+IjmBJA`I=jnY]6?^J7G@L>0
+VjmBJA`I=jnY]6?^J7G@L>0
+S1
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/RegPack.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/RegPack.sv
+!i122 0
+L0 1 0
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@pipe_@buf_@reg_@p@k@g
+vramOnChip32
+R2
+!i10b 1
+!s100 ANVMcJ>zoMilMS0;3XPLA0
+R3
+IIRIdz4bHn9P8RPRJgnTS[1
+R4
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ramOnChip32.v
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ramOnChip32.v
+!i122 0
+Z17 L0 40 78
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nram@on@chip32
+vramOnChipData
+R2
+!i10b 1
+!s100 _gV6BH4AzTX?eTUV22eHj0
+R3
+IY8hH:b:CSGVNfe=6G<ME[1
+R4
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ramOnChipData.v
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/ramOnChipData.v
+!i122 0
+R17
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nram@on@chip@data
+vRegFile
+R1
+R2
+!i10b 1
+!s100 :?B`7Zn]Gb5m`Z5KL_^>03
+R3
+IDdRNfN:7AOf9==Dk_fTV71
+R4
+S1
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/RegFile.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/RegFile.sv
+!i122 0
+L0 3 35
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@reg@file
+vriscv
+R1
+R2
+!i10b 1
+!s100 ZG:[k5[V9?jY[REj7dU`m2
+R3
+IZ<ndMMLcM=G1nGCA25dM81
+R4
+S1
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/RISC_V.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/RISC_V.sv
+!i122 0
+L0 3 71
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vtb_top
+R1
+R2
+!i10b 1
+!s100 <k4lG_MkNX?2l=l78L8cm0
+R3
+Ilm7[gSiAIIBB]eB0Q>5JR1
+R4
+S1
+R0
+R5
+8C:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/tb_top.sv
+FC:/Users/joaoh/Downloads/Risc-v-Pipeline-main/Risc-v-Pipeline-main/design/tb_top.sv
+!i122 0
+L0 3 62
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10

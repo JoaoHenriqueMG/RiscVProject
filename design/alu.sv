@@ -15,15 +15,15 @@ module alu#(
         always_comb
         begin
             case(Operation)   
-            4'b0000:        // ADD
-                    ALUResult = SrcA + SrcB;
-            4'b0001:        // SUB
-                    ALUResult = SrcA - SrcB;
-            4'b0010:        // AND
+            4'b0000:        // AND
                     ALUResult = SrcA & SrcB;
-            4'b0011:        // OR    
+            4'b0001:        // SUB*
+                    ALUResult = SrcA - SrcB;
+            4'b0010:        // ADD*
+                    ALUResult = SrcA + SrcB;
+            4'b0011:        // OR*    
                     ALUResult = SrcA | SrcB;
-            4'b0100:        // XOR
+            4'b0100:        // XOR*
                     ALUResult = SrcA ^ SrcB;
             4'b0101:        // SLL
                     ALUResult = SrcA << SrcB;
@@ -33,7 +33,7 @@ module alu#(
                     ALUResult = SrcA >>> SrcB;
             4'b1000:        // Equal
                     ALUResult = (SrcA == SrcB) ? 1 : 0;
-            4'b1001:        // SLT
+            4'b1001:        // SLT*
                     ALUResult = (SrcA < SrcB) ? 1 : 0;
             default:
                     ALUResult = 0;
