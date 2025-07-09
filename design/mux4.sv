@@ -4,9 +4,9 @@ module mux4 #(
     parameter WIDTH = 32
 ) (
     input logic [WIDTH-1:0] d00,
-    d01,
-    d10,
-    d11,
+                            d01,
+                            d10,
+                            d11,
     input logic [1:0] s,
     output logic [WIDTH-1:0] y
 );
