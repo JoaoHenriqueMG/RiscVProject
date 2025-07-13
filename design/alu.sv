@@ -35,6 +35,12 @@ module alu#(
                         ALUResult = $signed(SrcA) < $signed(SrcB);
                 4'b1010:        // SLTU, SLTUI
                         ALUResult = SrcA < SrcB;
+                4'b1011:        // BNE
+                        ALUResult = SrcA != SrcB;
+                4'b1100:        // BLT
+                        ALUResult = $signed(SrcA) < $signed(SrcB);
+                4'b1101:        // BGE
+                        ALUResult = $signed(SrcA) >= $signed(SrcB);
                 default:
                         ALUResult = 0;
             endcase
