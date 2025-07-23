@@ -38,7 +38,12 @@ module datamemory #(
     if (MemRead) begin
       case (Funct3)
         3'b010: begin  // LW
-          rd = Dataout;
+          case (a[1:0])
+            2'b00: rd = $signed(Dataout[31:0]);
+            2'b01: rd = $signed(Dataout[31:8]);
+            2'b10: rd = $signed(Dataout[31:16]);
+            2'b11: rd = $signed(Dataout[31:24]);
+          endcase
         end
         3'b000: begin  // LB
           case (a[1:0])
@@ -57,15 +62,19 @@ module datamemory #(
           endcase
         end
         3'b001: begin  // LH
-          case (a[1])
-            1'b0: rd = $signed(Dataout[15:0]);
-            1'b1: rd = $signed(Dataout[31:16]);
+          case (a[1:0])
+            2'b00: rd = $signed(Dataout[15:0]);
+            2'b01: rd = $signed(Dataout[23:8]);
+            2'b10: rd = $signed(Dataout[31:16]);
+            2'b11: rd = $signed(Dataout[31:24]);
           endcase
         end
         3'b101: begin  // LHU
-          case (a[1])
-            1'b0: rd = {16'b0, Dataout[15:0]};
-            1'b1: rd = {16'b0, Dataout[31:16]};
+          case (a[1:0])
+            2'b00: rd = {16'b0, Dataout[15:0]};
+            2'b01: rd = {16'b0, Dataout[23:8]};
+            2'b10: rd = {16'b0, Dataout[31:16]};
+            2'b11: rd = {24'b0, Dataout[31:24]};
           endcase
         end
         default: rd = Dataout;
@@ -74,8 +83,12 @@ module datamemory #(
     else if (MemWrite) begin
       case (Funct3)
         3'b010: begin  // SW
-          Wr = 4'b1111;
-          Datain = wd;
+          case (a[1:0])
+            2'b00: begin Wr = 4'b1111; Datain[31:0]  = wd[31:0]; end
+            2'b01: begin Wr = 4'b1110; Datain[31:8] = wd[23:0]; end
+            2'b10: begin Wr = 4'b1100; Datain[31:16] = wd[15:0]; end
+            2'b11: begin Wr = 4'b1000; Datain[31:24] = wd[7:0]; end
+          endcase
         end
         3'b000: begin  // SB
           case (a[1:0])
@@ -86,9 +99,11 @@ module datamemory #(
           endcase
         end
         3'b001: begin  // SH
-          case (a[1])
-            1'b0: begin Wr = 4'b0011; Datain[15:0]  = wd[15:0]; end
-            1'b1: begin Wr = 4'b1100; Datain[31:16] = wd[15:0]; end
+          case (a[1:0])
+            2'b00: begin Wr = 4'b0011; Datain[15:0]  = wd[15:0]; end
+            2'b01: begin Wr = 4'b0110; Datain[23:8] = wd[15:0]; end
+            2'b10: begin Wr = 4'b1100; Datain[31:16] = wd[15:0]; end
+            2'b11: begin Wr = 4'b1000; Datain[31:24] = wd[15:0]; end
           endcase
         end
         default: begin
