@@ -30,7 +30,8 @@ module tb_top;
       .addr(addr),
       .wr_data(wr_data),
       .rd_data(rd_data),
-      .Halt_riscv(Halt_riscv)
+      .Halt_riscv(Halt_riscv),
+      .Imm_riscv(Imm_riscv)
   );
 
   initial begin

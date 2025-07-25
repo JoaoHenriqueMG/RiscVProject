@@ -15,17 +15,20 @@ module riscv #(
     output logic [8:0] addr,
     output logic [DATA_W-1:0] wr_data,
     output logic [DATA_W-1:0] rd_data,
-    output logic Halt_riscv
+    output logic Halt_riscv,
+    output logic [31:0] Imm_riscv
 );
 
   logic [6:0] opcode;
-  logic ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, Halt;
+  logic ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, Halt, Jal, Jalr;
   logic [1:0] ALUop;
   logic [1:0] ALUop_Reg;
   logic [6:0] Funct7;
   logic [2:0] Funct3;
   logic [3:0] Operation;
+  logic [31:0] Imm;
 
+  assign Imm_riscv = Imm;
   assign Halt_riscv = Halt;
 
   Controller c (
@@ -37,7 +40,9 @@ module riscv #(
       MemWrite,
       ALUop,
       Branch,
-      Halt
+      Halt,
+      Jal,
+      Jalr
   );
 
   ALUController ac (
@@ -57,6 +62,8 @@ module riscv #(
       MemRead,
       Branch,
       Halt,
+      Jal,
+      Jalr,
       ALUop,
       Operation,
       opcode,
@@ -71,7 +78,8 @@ module riscv #(
       rd,
       addr,
       wr_data,
-      rd_data
+      rd_data,
+      Imm
   );
 
 endmodule
