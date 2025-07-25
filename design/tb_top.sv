@@ -29,7 +29,8 @@ module tb_top;
       .rd(rd),
       .addr(addr),
       .wr_data(wr_data),
-      .rd_data(rd_data)
+      .rd_data(rd_data),
+      .Halt_riscv(Halt_riscv)
   );
 
   initial begin
@@ -42,7 +43,7 @@ module tb_top;
 
     $stop;
   end
-
+  
   always_comb begin : MEMORY
     if (wr && ~rd)
       $display($time, ": Memory [%d] written with value: [%X] | [%d]\n", addr, wr_data, wr_data);
