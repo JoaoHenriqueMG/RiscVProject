@@ -26,7 +26,7 @@ module imm_Gen (
         	1'b0
       	};
 
-	  7'b1101111:  /*J-type JAL*/
+	  7'b1101111:  /*JAL*/
 	  	Imm_out = {inst_code[31] ? 11'hFFFFF : 11'b0, inst_code[31:12], 1'b0};
 	
 	  7'b1100111:  /*JALR*/

@@ -33,13 +33,13 @@ module Controller (
   assign JAL = 7'b1101111; // JAL
   assign JALR = 7'b1100111; // JALR
 
-  assign ALUSrc = (Opcode == LW || Opcode == SW || Opcode == I_TYPE);
+  assign ALUSrc = (Opcode == LW || Opcode == SW || Opcode == I_TYPE || Opcode == JALR);
   assign MemtoReg = (Opcode == LW);
   assign RegWrite = (Opcode == R_TYPE || Opcode == LW || Opcode == I_TYPE || Opcode == JAL || Opcode == JALR);
   assign MemRead = (Opcode == LW);
   assign MemWrite = (Opcode == SW);
-  assign ALUOp[0] = (Opcode == BR);
-  assign ALUOp[1] = (Opcode == R_TYPE || Opcode == I_TYPE);
+  assign ALUOp[0] = (Opcode == BR || Opcode == JALR);
+  assign ALUOp[1] = (Opcode == R_TYPE || Opcode == I_TYPE || Opcode == JALR);
   assign Branch = (Opcode == BR);
   assign Jal = (Opcode == JAL);
   assign Jalr = (Opcode == JALR);
