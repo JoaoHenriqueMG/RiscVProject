@@ -14,9 +14,7 @@ module riscv #(
     output logic rd,
     output logic [8:0] addr,
     output logic [DATA_W-1:0] wr_data,
-    output logic [DATA_W-1:0] rd_data,
-    output logic Halt_riscv,
-    output logic [31:0] Imm_riscv
+    output logic [DATA_W-1:0] rd_data
 );
 
   logic [6:0] opcode;
@@ -26,10 +24,6 @@ module riscv #(
   logic [6:0] Funct7;
   logic [2:0] Funct3;
   logic [3:0] Operation;
-  logic [31:0] Imm;
-
-  assign Imm_riscv = Imm;
-  assign Halt_riscv = Halt;
 
   Controller c (
       opcode,
@@ -78,8 +72,7 @@ module riscv #(
       rd,
       addr,
       wr_data,
-      rd_data,
-      Imm
+      rd_data
   );
 
 endmodule

@@ -29,9 +29,7 @@ module tb_top;
       .rd(rd),
       .addr(addr),
       .wr_data(wr_data),
-      .rd_data(rd_data),
-      .Halt_riscv(Halt_riscv),
-      .Imm_riscv(Imm_riscv)
+      .rd_data(rd_data)
   );
 
   initial begin

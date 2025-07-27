@@ -38,8 +38,7 @@ module Datapath #(
     output logic reade,  // read enable
     output logic [DM_ADDRESS-1:0] addr,  // address
     output logic [DATA_W-1:0] wr_data,  // write data
-    output logic [DATA_W-1:0] rd_data,  // read data
-    output logic [31:0] Imm  // Immediate value for ALU
+    output logic [DATA_W-1:0] rd_data  // read data
 );
 
   logic [PC_W-1:0] PC, PCPlus4, Next_PC;
@@ -133,8 +132,6 @@ module Datapath #(
       A.Curr_Instr,
       ExtImm
   );
-
-  assign Imm = ExtImm;
 
   // ID_EX_Reg B;
   always @(posedge clk) begin
