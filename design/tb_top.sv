@@ -15,7 +15,7 @@ module tb_top;
   logic [31:0] wr_data;
   logic [31:0] rd_data;
 
-  localparam CLKPERIOD = 10;
+  localparam CLKPERIOD = 5;
   localparam CLKDELAY = CLKPERIOD / 2;
 
   riscv riscV (
